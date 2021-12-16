@@ -47,13 +47,18 @@ const questions = [
         type: 'list',
         name:  'license',
         message: 'Choose a license to use:',
-        choices: ['Apache License 2.0', 'GNU GPLv3 ', 'GNU GPLv2', 'GNU AGPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'MIT', 'ISC', 'Boost Software License 1.0', 'No License'  ]
+        choices: ['Apache License 2.0', 'Boost Software License 1.0', 'BSD 3-Clause License', 'Eclipse Public License 1.0', 'GNU GPLv3', 'GNU GPLv2', 'GNU AGPLv3', 'GNU LGPLv3','GNU FDLv1.3', 'ISC', 'MIT', 'Mozilla Public License 2.0', 'No License'  ]
     },
     {
         type: 'input',
         name: 'contributing',
         message: 'Fill in the contribution section (Required) ',
         validate: input => input ? true :  console.log('Please enter how to contribute')
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Write any sample tests to run! ',
     },
     {
         type: 'input',
@@ -148,10 +153,17 @@ function init() {
     })
 }
 
+function test() {
+    console.log(mockData);
+    writeToFile('./result/README.md',mockData ) 
+}
+
 // Function call to initialize app
 //init();
 
+// Uncomment test to test the code with mock data
+test()
 
-console.log(mockData);
-writeToFile('./result/README.md',mockData )
+
+
 
