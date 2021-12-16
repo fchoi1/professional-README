@@ -159,10 +159,10 @@ function test() {
 }
 
 // Function call to initialize app
-//init();
+init();
 
-// Uncomment test to test the code with mock data
-test()
+// Uncomment test to test the code with mock data and uncomment init()
+//test()
 
 
 
