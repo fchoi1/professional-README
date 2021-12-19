@@ -40,6 +40,10 @@ Here is how you can contribute: Follow me on twitch! <br> You can fork the repo,
 
 ## Tests
   To test this code out, go to index.js and comment to init() and uncomment the test() function! <br> This will use mockdata to generate a readme file instead
+  
+## Demo
+Here is a Demo video to show how it works:
+[Walkthrough Demo] (https://watch.screencastify.com/v/IaBgQYDkF7qCaA7u3Wr5)
 
 ## Questions
 
